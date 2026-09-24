@@ -1,5 +1,8 @@
 # End-to-End Marketing Data Analytics Portfolio Project
 
+Final-year BCom Marketing Management portfolio specializing in data-driven product marketing analytics and growth strategy for local SMEs.
+Features an end-to-end commercial optimization case study for a real-time Coco Bliss Bakery & Snacks business based in the University of Pretoria by 3C Centurion the volt tuks young adult church leaders. By engineering data pipelines across Excel and SQL Server, executing predictive product mix profiling in Python (Pandas & Seaborn), and deploying dynamic Power BI dashboards, I transformed raw Inventory, logistics, and pricing data into actionable market intelligence. My analysis audited a 15+mSKU portfolio to eliminate margin leakages safeguarding a combined R2703 net profit and optimized distribution logistics to sharply upscale local market competitiveness.
+
 An enterprise-level inventory and business intelligence pipeline integrating relational database design, Python data engineering pipelines, automated visualization rendering, and dynamic corporate dashboard modeling.
 
 ## 🛠️ Architecture Stack
