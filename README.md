@@ -131,4 +131,5 @@ DIVIDE(
 * **Interactivity Controls:** Integrated global dynamic Slicer dropdown filtering on `ProductName` and .
 * **Visual Formatting Rules:** Implemented conditional gradient ranges mapping the low-margin floor to soft amber/red scales and peak performance efficiency metrics to vibrant executive greens.
 
-    
+    ---
+*Developed by Jesus Kazaji | BCom Marketing Management & Analytics*
