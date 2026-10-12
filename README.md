@@ -1,9 +1,8 @@
-# End-to-End Marketing Data Analytics Portfolio Project
+# Marketing Data Analytics Portfolio
 
-Final-year BCom Marketing Management portfolio specializing in data-driven product marketing analytics and growth strategy for local SMEs.
-Features an end-to-end commercial optimization case study for a real-time Coco Bliss Bakery & Snacks business based in the University of Pretoria. By engineering data pipelines across Excel and SQL Server, executing predictive product mix profiling in Python (Pandas & Seaborn), and deploying dynamic Power BI dashboards, I transformed raw Inventory, logistics, and pricing data into actionable market intelligence. My analysis audited a 15+ SKU portfolio to eliminate margin leakages safeguarding a combined R2703 net profit and optimized distribution logistics to sharply upscale local market competitiveness.
+A BCom Marketing Management project exploring product and inventory data for a Coco Bliss Bakery & Snacks case study. The repository demonstrates a workflow using SQL Server, Python, Excel, and Power BI to organize product data, calculate margin measures, and create visual summaries.
 
-An enterprise-level inventory and business intelligence pipeline integrating relational database design, Python data engineering pipelines, automated visualization rendering, and dynamic corporate dashboard modeling.
+The figures come from the project's sample data and should be read as a case-study analysis, not as independently verified business results. The README and source files should be checked together before using any totals in a presentation or decision.
 
 ## 🛠️ Architecture Stack
 * **Database Engine:** Microsoft SQL Server Express LocalDB (`(localdb)\MSSQLLocalDB`)
@@ -15,16 +14,16 @@ An enterprise-level inventory and business intelligence pipeline integrating rel
 ---
 
 ## Phase 1: Database Architecture (T-SQL)
-Created a structured, strongly-typed relational table inside a dedicated container database, enforcing an explicit primary key restriction and tracking unit-level performance metrics.
+Created a structured relational table in a local SQL Server database, with a primary key and product-level cost, revenue, and profit fields.
 
 ```sql
 USE InventoryDB;
 GO
 
--- Clear out existing test architecture profiles safely
+-- Reset the demo Products table before reloading sample rows
 DROP TABLE IF EXISTS Products;
 
--- Build locked production architecture columns
+-- Define product table columns
 CREATE TABLE Products (
     ProductID NVARCHAR(10) PRIMARY KEY,
     ProductName NVARCHAR(100) NOT NULL,
@@ -39,7 +38,7 @@ CREATE TABLE Products (
 );
 GO
 
--- Seed production inventory matrix records
+-- Load sample inventory records
 INSERT INTO Products VALUES 
 ('P001', 'Aquelle', 6, 43.00, 15.00, 90.00, 1, 7.17, 7.83, 47.00),
 ('P002', 'Seven7UP', 12, 116.00, 18.00, 216.00, 1, 9.67, 8.33, 100.00),
@@ -62,7 +61,7 @@ GO
 ---
 
 ##  Phase 2: Python Data Engineering Pipelines
-Automated the retrieval of relational data and calculated dynamic business performance metrics across cross-source environments.
+Python scripts retrieve product data from SQL Server and generate charts for the sample inventory.
 
 ### Execution Command via Launcher:
 ```bash
@@ -128,7 +127,7 @@ DIVIDE(
 ) * 100
 ```
 * **Data Modeling:** Linked relational `Products` table from SQL Server database to independent flat `marketing_costing.xlsx` data on `ProductName` column (1-to-1/1-to-Many join).
-* **Interactivity Controls:** Integrated global dynamic Slicer dropdown filtering on `ProductName` and .
+* **Interactivity Controls:** Added a product-name slicer to filter the report.
 * **Visual Formatting Rules:** Implemented conditional gradient ranges mapping the low-margin floor to soft amber/red scales and peak performance efficiency metrics to vibrant executive greens.
 
     ---
