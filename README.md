@@ -51,13 +51,13 @@ The interactive business intelligence layer features a comprehensive star-schema
 The diagnostic charts stored within the `MarketingDataAnalyticsPortfolio/` directory were programmatically generated via **Python script automation using the Seaborn and Matplotlib visualization libraries**:
 
 * **`marketing_roi_efficiency.png`** — Programmatic distribution plot displaying return on marketing investments per product.
-  ![Marketing ROI Performance Analysis](images/marketing_roi_efficiency.png)
+  ![Marketing ROI Performance Analysis](marketing_roi_efficiency.png)
   
 * **`product_margin_efficiency_chart.png`** — Automated horizontal bar matrix tracking unit profit parameters against manufacturing cost variables.
-  ![Product Profit Margin Efficiency](images/product_margin_efficiency_chart.png)
+  ![Product Profit Margin Efficiency](product_margin_efficiency_chart.png)
   
 * **`product_profit_chart.png`** — Diagnostic data plot summarizing raw weekly net yields across all tracked operational SKUs.
-  ![Product Profit Distribution](images/product_profit_chart.png)
+  ![Product Profit Distribution](product_profit_chart.png)
 
 ---
 
