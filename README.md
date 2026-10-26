@@ -70,4 +70,4 @@ The diagnostic charts stored within the `MarketingDataAnalyticsPortfolio/` direc
 *Rather than writing boilerplate structural frameworks from scratch, my modern workspace workflow heavily incorporates advanced AI orchestration and expert-level prompt engineering. I leverage generative models to structure, refactor, and accelerate script creation while personally owning system architecture, debugging, database modeling, validation, and commercial strategic alignment.*
 
 ---
-Developed by Jesus Kazaji | BCom Marketing Management #
+Developed by Jesus Kazaji | BCom Marketing Management
