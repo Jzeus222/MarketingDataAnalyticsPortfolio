@@ -6,6 +6,12 @@ BCom Marketing Management portfolio focused on data-driven SME (Small and Medium
 
 This project demonstrates an end-to-end data engineering and business intelligence pipeline—bridging raw relational databases with interactive, production-ready executive dashboards.
 
+## 🎯 Business Case: Problem vs. Solution
+
+* **The Problem:** Small and Medium-sized Enterprises (SMEs) like Coco Bliss often rely on siloed, manual spreadsheets to track sales and stock. This fragmentation creates blind spots, leading to untracked manufacturing cost spikes, margin leakages across complex SKU mixes, and unmeasured marketing spend.
+* **The Solution:** This project replaces manual oversight with a unified data infrastructure. By engineering an end-to-end pipeline—from SQL relational storage to automated Python diagnostics and interactive Power BI dashboards—the business gains a single source of truth to instantly identify low-margin items, track weekly net yields, and optimize marketing ROI.
+
+
 ## 🚀 Key Features & Capabilities
 * **Relational Database Architecture:** Structured T-SQL schemas managing inventory layers, transaction logs, and underlying cost metrics.
 * **Automated Data Pipelines:** Programmatic extraction and database management using Python backend scripts.
