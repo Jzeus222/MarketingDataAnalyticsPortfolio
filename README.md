@@ -11,6 +11,16 @@ This project demonstrates an end-to-end data engineering and business intelligen
 * **The Problem:** Small and Medium-sized Enterprises (SMEs) like Coco Bliss often rely on siloed, manual spreadsheets to track sales and stock. This fragmentation creates blind spots, leading to untracked manufacturing cost spikes, margin leakages across complex SKU mixes, and unmeasured marketing spend.
 * **The Solution:** This project replaces manual oversight with a unified data infrastructure. By engineering an end-to-end pipeline—from SQL relational storage to automated Python diagnostics and interactive Power BI dashboards—the business gains a single source of truth to instantly identify low-margin items, track weekly net yields, and optimize marketing ROI.
 
+## 📊 Solution Architecture & Data Flow
+
+```mermaid
+graph TD
+    A[Raw CSV/Excel Sales Data] -->|Python & Pandas| B[Data Cleaning & Normalization]
+    B -->|T-SQL Staged Loads| C[SQL Server Data Warehouse]
+    C -->|Star Schema Views| D[Power BI Semantic Model]
+    D -->|DAX Measures| E[Interactive Executive Dashboard]
+    E -->|Automated Prompting| F[AI-Generated Business Insights]
+```
 
 ## 🚀 Key Features & Capabilities
 * **Relational Database Architecture:** Structured T-SQL schemas managing inventory layers, transaction logs, and underlying cost metrics.
