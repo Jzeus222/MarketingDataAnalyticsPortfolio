@@ -68,6 +68,16 @@ The diagnostic charts stored within the `MarketingDataAnalyticsPortfolio/` direc
   ![Product Profit Distribution](product_profit_chart.png)
 
 ---
+## 📊 Solution Architecture & Data Flow
+
+```mermaid
+graph TD
+    A[Raw CSV/Excel Sales Data] -->|Python & Pandas| B[Data Cleaning & Normalization]
+    B -->|T-SQL Staged Loads| C[SQL Server Data Warehouse]
+    C -->|Star Schema Views| D[Power BI Semantic Model]
+    D -->|DAX Measures| E[Interactive Executive Dashboard]
+    E -->|Automated Prompting| F[AI-Generated Business Insights]
+---
 
 ## ⚙️ Development Methodology & Tech Stack
 * **Analytics & Engineering:** Python (Pandas, NumPy, Seaborn, Matplotlib)
