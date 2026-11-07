@@ -19,7 +19,6 @@ graph TD
     B -->|T-SQL Staged Loads| C[SQL Server Data Warehouse]
     C -->|Star Schema Views| D[Power BI Semantic Model]
     D -->|DAX Measures| E[Interactive Executive Dashboard]
-    E -->|Automated Prompting| F[AI-Generated Business Insights]
 ```
 
 ## 🚀 Key Features & Capabilities
