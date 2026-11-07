@@ -22,7 +22,7 @@ graph TD
 
     A[Raw CSV/Excel Sales Data] -->|T-SQL ETL Staged Loads| B[SQL Server Data Warehouse]
     B -->|Python & Pandas Extractions| C[Data Cleaning & Normalization]
-    C -->|Import SQL Query Data & Excel Data| D[Imported SQL Inventory Data &<br>Excel Spreadsheet (marketing_costing.xlsx) into Power BI]
+    C -->|Import SQL Query Data & Excel Data| D[Imported SQL Inventory Data &<br>Excel Spreadsheet marketing_costing.xlsx into Power BI]
     D -->|Automated Scripts| E[Data Transformation & Seaborn/Matplotlib Visualizations]
     E -->|Star Schema Views| F[Power BI Semantic Model]
     F -->|DAX Measures| G[Interactive Executive Dashboard]
