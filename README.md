@@ -15,10 +15,22 @@ This project demonstrates an end-to-end data engineering and business intelligen
 
 ```mermaid
 graph TD
-    A[Raw CSV/Excel Sales Data] -->|Python & Pandas| B[Data Cleaning & Normalization]
-    B -->|T-SQL Staged Loads| C[SQL Server Data Warehouse]
-    C -->|Star Schema Views| D[Power BI Semantic Model]
-    D -->|DAX Measures| E[Interactive Executive Dashboard]
+    %% Define Styles
+    classDef process fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b;
+    classDef asset fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100;
+    classDef output fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#1b5e20;
+
+    A[Raw CSV/Excel Sales Data] -->|T-SQL ETL Staged Loads| B[SQL Server Data Warehouse]
+    B -->|Python & Pandas Extractions| C[Data Cleaning & Normalization]
+    C -->|Import SQL Query Data & Excel Data| D["Imported SQL Inventory Data &<br>Excel Spreadsheet (marketing_costing.xlsx) into Power BI"]
+    D -->|Automated Scripts| E[Data Transformation & Seaborn/Matplotlib Visualizations]
+    E -->|Star Schema Views| F[Power BI Semantic Model]
+    F -->|DAX Measures| G[Interactive Executive Dashboard]
+
+    %% Apply Styles
+    class A,B,C,D,F process;
+    class E asset;
+    class G output;
 ```
 
 ## 🚀 Key Features & Capabilities
