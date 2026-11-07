@@ -14,6 +14,7 @@ This project demonstrates an end-to-end data engineering and business intelligen
 ## 📊 Solution Architecture & Data Flow
 
 ```mermaid
+```mermaid
 graph TD
     %% Define Styles
     classDef process fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b;
@@ -22,8 +23,8 @@ graph TD
 
     A[Raw CSV/Excel Sales Data] -->|T-SQL ETL Staged Loads| B[SQL Server Data Warehouse]
     B -->|Python & Pandas Extractions| C[Data Cleaning & Normalization]
-    C -->|Import SQL Query Data & Excel Data| D[(Imported SQL Inventory Data &<br>Excel Spreadsheet marketing_costing.xlsx into Power BI)]
-    D -->|Automated Scripts| E[Data Transformation & Seaborn/Matplotlib Visualizations]
+    C -->|Automated Scripts| D[Data Transformation & Seaborn/Matplotlib Visualizations]
+    D -->|Import SQL Data & Excel Data| E[(Imported SQL Database Inventory.DB &<br>Excel Spreadsheet marketing_costing.xlsx in Power BI)]
     E -->|Star Schema Views| F[Power BI Semantic Model]
     F -->|DAX Measures| G[Interactive Executive Dashboard]
 
